@@ -1,0 +1,27 @@
+.grid-auto-fill{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	grid-gap: 20px;
+	border: 3px solid green;
+	border-radius: .3em;
+	padding: 10px;
+	margin: 10rem auto;
+
+}
+
+.grid-auto-fit{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-gap: 20px;
+	border: 3px solid green;
+	border-radius: .3em;
+	padding: 10px;
+	margin: 10rem auto;
+
+}
+
+div div{
+	border: 3px solid black;
+	padding: 10px;
+	margin: 10px;
+}

@@ -1,0 +1,15 @@
+*{
+	font-family: sans-serif;
+	font-weight: 100;
+	/*scroll-behavior: smooth;/* es una propiedad que sirve para cambiar el efecto brusco de un scroll*/
+
+}
+
+.container {
+	padding: 20px;
+	background: #59f;
+	font-size: 20px;
+	/*direction: rtl o ltr; /*le cambia la direccion al container en este caso al texto.*/
+	/*letter-spacing: 1px; /*crea un espaciado entre letras*/
+	user-select: none; /*evita que se seleccionen cosas, en este caso letras*/
+}

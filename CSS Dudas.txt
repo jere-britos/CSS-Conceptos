@@ -1,0 +1,53 @@
+Propiedades Relativas (REM EM)
+
+Metodologia bem
+
+before y after
+
+especificidad- de memoria
+
+menu responsive ver de nuevo.
+
+ejemplos de main axis y cross axis
+
+flex direction
+
+TRANSITION Y TRANSFORM
+
+flex basis
+
+GRID IMPLICITO
+
+ALINEACION DE GRID
+
+JUSTIFY-ITEMS
+ALIGN-ITEMS
+
+JUSTIFY-CONTENT
+ALIGN-CONTENT
+
+JUSTIFY-SELF
+ALIGN-SELF
+
+
+background-size
+
+PRACTICAS CON FILTER
+
+
+
+
+
+
+
+cosas que se
+min-content max content
+la celda se ajusta al min o max del contenido de la celda.
+
+AUTOFILL llena automaticamente de filas o columnas hasta que haya lugar.
+
+AUTOFIT En vez de llenar el espacio con filas o columnas, escala los que estan adentro.
+
+ABSOLUTE Y FIXED
+
+Box-sizing : BORDER-BOX

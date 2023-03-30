@@ -1,0 +1,29 @@
+*{
+	font-family: sans-serif;
+	font-weight: 100;
+	font-size: 20px;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-evenly;
+	height: 100vh;
+}
+
+.flex-item{
+	background-color: #248;
+	color: #fff;
+	margin: 5px;
+	min-width: 120px;
+	text-align: center;
+	height: 100px;
+}
+
+.orange {
+	background: orange;
+}
+
+.green {
+	background: green;
+	align-self: stretch;
+}

@@ -1,0 +1,47 @@
+*{
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+.container {
+	padding: 20px 5px;
+	background: #86f;
+}
+
+.caja {
+	background: #025;
+	height: 80px;
+	width: 80px;
+	margin: 20px;
+	animation-name: desplazarse;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;	
+	position: relative;
+}
+
+/*@keyframes desplazarse {
+	from {
+		position: relative;
+		left: 0;
+	}
+	to {
+		left: 80%;
+	}
+}*/
+
+@keyframes desplazarse {
+	0% {
+		left: 0;
+		background: #025;
+	}
+
+	50% {
+		background: red;
+	}
+
+	100% {
+		left: 80%;
+		background: green;
+	}
+}

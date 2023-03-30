@@ -1,0 +1,94 @@
+Display Flex
+
+Al momento de ser aplicado al contenedor, cada hijo del container se pone uno al lado del otro (Elementos en linea), se juntan y se ponen al borde del inicio del contenedor.
+
+Los hijos se convierten en flex-items con todos sus beneficios.
+
+Si el container tiene 400 de ancho, y le ponemos 4 items de 200, no se desborda, si no que se ajusta para que quepan todos.
+Con ancho auto, se mantiene el ancho del contenido.
+
+por defecto los items del container tienen un align-items:stretch;
+
+---------FLEX EN EL CONTAINER
+
+FLEX DIRECCION:
+ Por defecto el main-axis es horizontal y el cross-axis es vertical.
+  * ROW
+  * ROW-REVERSE.
+  * COLUMN.
+  * COLUMN-REVERSE.
+
+FLEX WRAP:
+ Define el comportamiento de los flex-items cuando miden mas que el contenedor o cuando su tamaño ya no cabe en el contenedor.
+  *nowrap (por defecto)
+
+  *wrap: Si los tamaños sumados de los elementos revasan el tamaño del main-axis, se crean nuevas lineas.
+
+  *wrap-reverse: Si se desbordan pero los mandara al final del cross-axis.
+
+SHORTHAND: "flex-flow" agrupa el flex-direction y el flex-wrap.
+
+
+ALINEAR A LOS ELEMENTOS
+Para que la alineación en flexbox funcione,ya sea en el main-axis o cross-axis deben haber espacio disponible.
+
+justify-content: nos permite alinea atravez del eje principal o tambien conocido como el MAIN-AXIS.
+  
+  * flex-start: propiedad por defecto que alinea todos al incio del container.	
+  * flex-end: alinea todos los elementos al final del main-axis.
+  * center: centra todo los elementos en el main-axis.
+  * space-between: reparte el espacio equivalentemente entre todos los elementos, pero el primer elemento y el ultimo elemento se pegan a las esquinas. (puede ser usado para un menu de navegación)
+  * space-around: reparte el mismo espacio, en izquierda y en derecha.
+  * space-evenly: reparte el mismo espacio pero esta vez equitativamente.
+
+
+align-items: se encarga de alinear los elementos en el eje secundario o en el eje llamado cross-axis.
+por defecto tienen la propiedad stretch.
+gracias al justify-content y el align items podemos alinear de la forma que querramos.
+   * todas las anteriores.
+   * baseline: se alinea con el contenido del texto del flex-items.
+
+
+align-content: esta solo se aplica cuando se produce desbordamientos de items en el flex container y se crea una segunda linea.
+tiene todas las propiedades que tiene JUSTIFY-CONTENT y funciona igual pero solamente en el cross-axis.
+
+----------FLEX EN LOS ITEMS
+los flex items pueden tener propiedades individualmente.
+
+ * Order: permite cambiar el orden de los elementos en el MAIN-AXIS.
+Por defecto todos los elementos tienen un order de 0.
+
+ * flex-grow: determina el factor de crecimiento de los elementos.
+Se encarga en distribuir el espacio sobrante entre los elementos del container.
+por defecto es 0, si hay espacio sobrante nadie lo va a tomar, pero si tienen un flex-grow: 1, todos los elementos lo van a tomar.
+Esto es como fracciones: si tenemos 100/4 = 25, cada elemento va a tener 25.
+solo sirve para el main-axis.
+tambien puede usar decimales.
+
+ * flex-shrink: como se van a encojer los elementos cuando empieze a haber espacio faltante.
+por defecto es 1.(se encojen todos iguales)
+si no quiere que los elementos se encojan se debe aplicar flex-shrink: 0;
+
+ * flex-basis: determina el tamaño base en el main-axis, es decir que determina el tamaño antes de que grow o shrink intervengan en el.
+se convierte en width o height deacuerdo al posicionamiento del main-axis.
+por defecto tiene su valor en "auto".
+
+Si el contenido es mas grande que otro elemento, ese elemento tendra un ancho mayor o un alto mayor, porque por defecto tienen un max-content los elementos.
+Pero si tu quieres que tus elementos tengan el mismo tamaño independientemente el contenido, vas a poner un flex-basis = 0;
+
+SHORTHAND: FLEX
+flex engloba a grow shrink basis, 
+por defecto flex: 0 1 auto;
+
+ * align-self: tiene los mismos valores que align-items, permite modificar en el cross-axis a un elemento individualmente.
+
+ * margin: en una caja flex se posicionan de manera diferente.
+   - margin-left: auto; ocupara todo su margin desde la izquierda hasta la derecha.(lo manda a la esquina derecha)
+   - margin-right: auto; (lo manda hacia la izquierda)
+   - margin-top: auto; (lo manda hacia abajo)
+   - margin-bottom: auto; (lo manda hacia arriba)
+   - margin: auto; (lo centra en el medio del contenedor)
+
+
+
+poner el outline en el *{}

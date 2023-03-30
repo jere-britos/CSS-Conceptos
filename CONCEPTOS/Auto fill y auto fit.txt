@@ -1,0 +1,17 @@
+Auto fill & Auto fit
+Esto va a ayudar cuando quieramos adaptar nuestra grid a dispositivos moviles.
+
+grid-template-columns: repeat(4, minmax(100px, 1fr));
+crea 4 columnas con un minimo de 100px y un maximo de 1 fr.
+
+La desventaja que tiene esto es que si se encoge mas de los 100px, los objetos no se encogen pero el contenedor si.
+Para solucionar esto existe el auto-fill y el auto-fit.
+
+usando auto-fill el ultimo elemento como no cabia a la derecha se posiciono abajo, y al agrandar de mas al contenedor va a ir llenado la fila con todas las columnas que pueda poner.
+va a crear columnas implicitas en caso de que quepan.
+
+
+usando auto-fit trabaja igual que auto-fill cuando se trata para dispositivos moviles. La diferencia se va a hacer notar cuando haya poco elementos.
+Lo que sucede es que los elementos que existen abarcan todo el espacio disponible a diferencia de auto-fill.
+
+Estas anteriores se trabajan solo con "repeat(auto-fill, minmax(100px,1fr))

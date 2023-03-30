@@ -1,0 +1,1 @@
+poner el outline en el *{}
